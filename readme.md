@@ -1,3 +1,3 @@
 Ahoj svet! 
 
-I ❤️ HTML & CS
+I ❤️ HTML & CSS
