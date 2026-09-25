@@ -2,7 +2,23 @@
 
 ---
 
-## 1. Párový vs. nepárový tag
+## 1. `<head>` a `<body>` — aký majú význam
+
+| Časť | Význam |
+|---|---|
+| `<head>` | **Neviditeľná** časť stránky. Návštevník ju na stránke nevidí — obsahuje info *o* stránke (title, meta charset, viewport). |
+| `<body>` | **Viditeľná** časť. Všetko, čo je medzi `<body>` a `</body>`, sa zobrazí na obrazovke. |
+
+V dnešnom cvičení bolo v `<head>` navyše aj:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+Toto zabezpečí, že sa stránka správne zobrazí aj na mobile — zapamätaj si ho, budeme ho dávať do každej stránky.
+
+---
+
+
+## 2. Párový vs. nepárový tag
 
 **Párový tag** — má otvárací aj zatvárací tag, medzi nimi je obsah:
 ```html
@@ -18,21 +34,6 @@ Zatvárací tag spoznáš podľa lomítka `/` pred názvom — `</h1>`, `</p>`.
 ```
 
 👉 **Skoro všetky tagy, ktoré sme dnes používali (h1, h2, h3, p), sú párové.** Ak zabudneš zatvárací tag, stránka sa môže zobraziť nesprávne alebo neprehľadne.
-
----
-
-## 2. `<head>` a `<body>` — aký majú význam
-
-| Časť | Význam |
-|---|---|
-| `<head>` | **Neviditeľná** časť stránky. Návštevník ju na stránke nevidí — obsahuje info *o* stránke (title, meta charset, viewport). |
-| `<body>` | **Viditeľná** časť. Všetko, čo je medzi `<body>` a `</body>`, sa zobrazí na obrazovke. |
-
-V dnešnom cvičení bolo v `<head>` navyše aj:
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
-Toto zabezpečí, že sa stránka správne zobrazí aj na mobile — zapamätaj si ho, budeme ho dávať do každej stránky.
 
 ---
 
