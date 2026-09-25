@@ -1,4 +1,4 @@
-# Poznámky z hodiny — HTML základy <p> a <h1> až <h6>
+# Poznámky z hodiny — HTML základy `<p>` a `<h1>` až `<h6>`
 
 ---
 
