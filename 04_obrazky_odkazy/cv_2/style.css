@@ -1,0 +1,222 @@
+:root {
+  --tmava: #17324d;
+  --modra: #3768d8;
+  --svetla: #edf4ff;
+  --oran: #f5a623;
+  --biela: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--tmava);
+  background: #f7f9fc;
+  line-height: 1.6;
+}
+
+.hlavicka {
+  background: var(--biela);
+  border-bottom: 1px solid #dce4ef;
+}
+
+.navigacia {
+  max-width: 1050px;
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navigacia a {
+  color: var(--tmava);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigacia a:hover,
+.navigacia a[aria-current="page"] {
+  color: var(--modra);
+  text-decoration: underline;
+}
+
+.navigacia .logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.15rem;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+}
+
+main {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+}
+
+.uvod {
+  min-height: 380px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 36px;
+  padding: 36px;
+  background: var(--svetla);
+  border-radius: 18px;
+}
+
+.uvod-mensi {
+  min-height: 220px;
+  grid-template-columns: 1fr;
+}
+
+.uvod h1 {
+  margin: 8px 0 12px;
+  font-size: clamp(2.2rem, 7vw, 4.5rem);
+  line-height: 1;
+}
+
+.uvod img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.oznacenie {
+  display: inline-block;
+  margin: 0;
+  color: var(--modra);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.panel {
+  margin: 24px 0;
+  padding: 28px;
+  background: var(--biela);
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(23, 50, 77, 0.07);
+  scroll-margin-top: 20px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: var(--modra);
+}
+
+.priklady {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.priklady article,
+.galeria article {
+  padding: 18px;
+  background: var(--svetla);
+  border-radius: 10px;
+}
+
+.priklady code,
+.kod,
+.poznamka {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.tlacitko {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  color: var(--biela);
+  background: var(--modra);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.tlacitko:hover {
+  background: var(--tmava);
+}
+
+.sekundarne {
+  background: var(--oran);
+  color: var(--tmava);
+}
+
+.strom {
+  padding: 18px;
+  overflow-x: auto;
+  background: var(--tmava);
+  color: var(--biela);
+  border-radius: 10px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.obr-obrovsky {
+  width: 100%;
+  max-height: 260px;
+}
+
+.poznamka {
+  padding: 12px;
+  background: var(--svetla);
+  border-left: 4px solid var(--oran);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  color: var(--biela);
+  background: var(--tmava);
+}
+
+footer a {
+  color: var(--biela);
+}
+
+@media (max-width: 700px) {
+  .navigacia {
+    justify-content: center;
+  }
+
+  .navigacia .logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .uvod,
+  .priklady,
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .uvod {
+    text-align: center;
+  }
+}

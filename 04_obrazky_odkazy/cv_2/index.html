@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prieskumník - Domov</title>
+
+  <!-- Úloha 1: Pripojte CSS: -->
+</head>
+<body>
+  <header class="hlavicka">
+    <nav class="navigacia" aria-label="Hlavná navigácia">
+      <!-- Úloha 2: Doplňte logo, ktoré bude zároveň odkaz
+           
+      -->
+
+      <!-- Úloha 3: Doplňte odkazy na podstránky
+      -->
+    </nav>
+  </header>
+
+  <main>
+    <section class="uvod">
+      <div>
+        <p class="oznacenie">Vitaj na ceste za HTML</p>
+        <h1>Odkazy a navigácia</h1>
+        <p>
+          Na tejto stránke vidíš <strong>hlavnú navigáciu</strong> medzi
+          podstránkami aj prepojenie CSS a obrázka.
+        </p>
+      </div>
+
+      <!-- Úloha 4: Vložte obrázok cesta.svg  -->
+    </section>
+
+    <section class="panel">
+      <h2>Čo je to cesta k súboru?</h2>
+      <p>
+        HTML súbor musí vedieť, <strong>kde</strong> sa nachádzajú obrázky,
+        štýly a ďalšie stránky. Cesta je ako presná inštrukcia, ako sa dostať
+        od jedného súboru k druhému.
+      </p>
+
+      <pre class="strom"><code>05_odkazy_kotvy/
+├── index.html
+├── o-mne.html
+├── galeria.html
+├── kontakt.html
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── images/
+        ├── logo.svg
+        └── cesta.svg</code></pre>
+    </section>
+
+    <section class="panel">
+      <h2>Relatívna cesta</h2>
+      <p>
+        Relatívna cesta vychádza z miesta, kde sa nachádza aktuálny HTML súbor.
+      </p>
+
+      <!-- Úloha 5: Vytvorte odkaz na podstránku galéria.html  --> 
+      <div class="priklady">
+        <article>
+          <h3>Súbor vedľa</h3>
+          <code>&lt;a href="o-mne.html"&gt;O nás&lt;/a&gt;</code>
+          <p><code>o-mne.html</code> je v tom istom priečinku ako <code>index.html</code>.</p>
+        </article>
+        <article>
+          <h3>Čo je v podpriečinku</h3>
+          <code>&lt;link href="assets/css/style.css"&gt;</code>
+          <p>Najprv vstúpime do <code>assets</code>, potom do <code>css</code>.</p>
+        </article>
+        <article>
+          <h3>Súbor v nadradenom priečinku</h3>
+          <p>Súbor <code>starter/index.html</code> je v podpriečinku.</p>
+          <p><code>../</code> znamená „choď do nadradeného priečinka“.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Absolútna cesta</h2>
+      <p>
+        Absolútna cesta obsahuje celú internetovú adresu. Použijeme ju pri
+        odkaze na úplne inú webovú stránku.
+      </p>
+
+      <!-- Úloha 6: Vytvorte externý odkaz na https://developer.mozilla.org/ časť, kde sa vysvetľujú odkazy -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Jednoduchý príklad HTML navigácie</p>
+  </footer>
+</body>
+</html>
